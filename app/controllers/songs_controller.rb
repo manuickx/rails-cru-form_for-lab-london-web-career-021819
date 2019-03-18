@@ -32,7 +32,7 @@ before_action :set_song, only: [:show, :edit, :update]
   end
 
   def song_params
-    params.require(:song).permit(:name, :bio)
+    params.require(:song).permit(:name, :artist_id, :genre_id)
   end
 
 end
